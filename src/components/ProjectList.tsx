@@ -1,5 +1,5 @@
 import NossaHomePageImage from "../assets/nossa-homepage.webp";
-import NossaTitle from "../assets/nossa-title.svg";
+import NossaProjectLogo from "../assets/nossa-logo.svg";
 
 export default function ProjectList() {
   return (
@@ -10,10 +10,11 @@ export default function ProjectList() {
           src={NossaHomePageImage}
           alt="NOSSA! Homepage"
         />
+
         <div className="project-item--content">
-          <div>
-            <img src={NossaTitle} alt="NOSSA!" />
-          </div>
+          <figure className="project-item--content--logo">
+            <img src={NossaProjectLogo} alt="NOSSA!" />
+          </figure>
           <p className="project-item--description">
             A platform that provides opportunities for local artists to perform
             at cultural events. Winner of Aveiro Tech City - ACADEMIA Challenges
