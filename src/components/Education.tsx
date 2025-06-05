@@ -43,14 +43,16 @@ export default function Education() {
               <div className="item-date">2019 - 2021</div>
             </div>
             <p className="item-content--location">University of Aveiro</p>
-            <p>Web development & Design</p>
-            <ul className="item-list">
-              <li>
-                <a href="https://www.ua.pt/en/c/1531/p" target="_blank">
-                  Curricular Plan: https://www.ua.pt/en/c/1531/p
-                </a>
-              </li>
-            </ul>
+            <div className="item-description">
+              <p>Web development & Design</p>
+              <ul className="item-list">
+                <li>
+                  <a href="https://www.ua.pt/en/c/1531/p" target="_blank">
+                    Curricular Plan: https://www.ua.pt/en/c/1531/p
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
       </ul>
