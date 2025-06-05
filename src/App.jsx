@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Mail, MapPinned } from "lucide-react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <nav>
+        <div>Logo</div>
+        <ul>
+          <li>About</li>
+          <li>Experience</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <section></section>
+      <section className="about">
+        <h1>João Almeida</h1>
+        <h2>Frontend Developer</h2>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          I'm João Almeida, a frontend web developer with some knowledge of the
+          backend.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <ul>
+          <li>
+            <Mail />
+            joao-almeida11@outlook.com
+          </li>
+          <li>
+            <MapPinned />
+            Portugal
+          </li>
+          <li>
+            <FaLinkedin />
+            www.linkedin.com/in/joao-almeida11
+          </li>
+          <li>
+            <FaGithub />
+            https://github.com/joao-almeida11
+          </li>
+        </ul>
+      </section>
+      <section className="experience"></section>
+      <section className="projects"></section>
+      <section className="contact"></section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
