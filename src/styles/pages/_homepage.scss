@@ -11,11 +11,21 @@ body {
     height: calc(100vh - 12rem);
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 
     // leave space for the bookshelf (scroll assist) + margin
-    width: calc(100% - $bookshelf-width - 2rem);
+    // width: calc(100% - $bookshelf-width - 2rem);
+  }
+
+  h1 + span {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: $color-secondary;
+    font-size: 2rem;
   }
 
   .experience,

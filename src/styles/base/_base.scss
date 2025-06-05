@@ -12,8 +12,8 @@ html {
 body {
   @extend %description-16;
 
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: $color-white;
+  color: $color-black;
   font-family: $font-body;
   font-optical-sizing: auto;
   touch-action: pan-y;

@@ -1,12 +1,32 @@
 .navbar {
   position: fixed;
-  bottom: 2rem;
   right: 0;
+  top: 0;
   width: 100%;
 }
 .navbar-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
+  .logo {
+    padding: 2rem;
+  }
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+
+  > li {
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+
+    &:hover {
+      border: 2px solid $color-primary;
+    }
+  }
 }
 
 .navbar-books {
