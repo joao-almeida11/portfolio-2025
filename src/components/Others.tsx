@@ -10,21 +10,19 @@ export default function Education() {
 
       <ul className="items">
         <li className="item-grid">
-          <div className="item-date">2025</div>
           <div className="item-content">
             <p>Courses on Frontend Masters</p>
             <p>To refresh basics and learn new things.</p>
           </div>
+          <div className="item-date">2025</div>
         </li>
         <li className="item-grid">
-          <div className="item-date">2024</div>
           <div className="item-content">
             <p>Certificate in Advanced English - C1</p>
           </div>
+          <div className="item-date">2024</div>
         </li>
         <li className="item-grid">
-          <div className="item-date">2018 - 2023</div>
-
           <div className="item-content">
             <h3 className="title-3">
               Mentor at AVILA UA{" "}
@@ -37,13 +35,14 @@ export default function Education() {
               https://www.ua.pt/en/uc/15719
             </p>
           </div>
+          <div className="item-date">2018 - 2023</div>
         </li>
         <li className="item-grid">
-          <div className="item-date">2022</div>
           <div className="item-content">
             <p>First Aid</p>
             <p>Academia Génios Livres</p>
           </div>
+          <div className="item-date">2022</div>
         </li>
       </ul>
     </section>

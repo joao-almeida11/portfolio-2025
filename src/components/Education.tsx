@@ -9,13 +9,12 @@ export default function Education() {
 
       <ul className="items">
         <li className="item-grid">
-          <div className="item-date">2019 - 2021</div>
           <div className="item-content">
             <p>BACHELOR in New Communication Technologies (BACHELOR)</p>
           </div>
+          <div className="item-date">2019 - 2021</div>
         </li>
         <li className="item-grid">
-          <div className="item-date">2021 - 2023</div>
           <div className="item-content">
             <p>
               BACHELOR in New Communication Technologies (BACHELOR)
@@ -25,6 +24,7 @@ export default function Education() {
               <li>Thesis: http://hdl.handle.net/10773/42176</li>
             </ul>
           </div>
+          <div className="item-date">2021 - 2023</div>
         </li>
       </ul>
     </section>

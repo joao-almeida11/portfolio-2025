@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section className="about" id="about">
       <h1 className="title">João Almeida</h1>
-      <span>Frontend Developer</span>
+      <span className="subtitle">Frontend Developer</span>
       <p>A frontend web developer with some knowledge of the backend.</p>
       <ul className="about-socials">
         <li>

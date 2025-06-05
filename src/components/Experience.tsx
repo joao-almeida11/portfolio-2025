@@ -9,8 +9,6 @@ export default function Experience() {
 
       <ul className="items">
         <li className="item-grid">
-          <div className="item-date">2021 - 2023</div>
-
           <div className="item-content">
             <h3 className="title-3">
               AlticeLabs@UA -{" "}
@@ -39,6 +37,7 @@ export default function Experience() {
               </li>
             </ul>
           </div>
+          <div className="item-date">2021 - 2023</div>
         </li>
       </ul>
     </section>

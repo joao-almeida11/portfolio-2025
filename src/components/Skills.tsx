@@ -1,5 +1,4 @@
 import { Puzzle } from "lucide-react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 export default function AboutMe() {
   return (
     <section className="skills" id="skills">
@@ -10,33 +9,35 @@ export default function AboutMe() {
 
       <div className="skills-content">
         <div>
-          <p>Languages</p>
+          <span className="subtitle">Languages</span>
           <ul>
             <li>Portuguese (Native)</li>
             <li>English (Cambridge C1)</li>
           </ul>
         </div>
         <div>
-          <p>Technical Languages </p>
+          <span className="subtitle">Technical Languages </span>
           <ul>
             <li>JavaScript, PHP</li>
             <li>HTML, CSS, SASS</li>
           </ul>
         </div>
+
         <div>
-          <p>Frameworks</p>
+          <span className="subtitle">Frameworks</span>
           <ul>
             <li>React</li>
           </ul>
         </div>
         <div>
-          <p>Technologies</p>
+          <span className="subtitle">Technologies</span>
           <ul>
             <li>MySQL, Git, neo4j, Linux, Node.js</li>
           </ul>
         </div>
+
         <div>
-          <p>Soft skills</p>
+          <span className="subtitle">Soft skills</span>
           <ul>
             <li>Communication</li>
             <li>Problem-solving</li>
