@@ -1,7 +1,11 @@
+import { GraduationCap } from "lucide-react";
 export default function Education() {
   return (
     <section className="education" id="education">
-      <h2 className="title-2">Education</h2>
+      <h2 className="title-2">
+        <GraduationCap color="#608abf" size={34} />
+        <span>Education</span>
+      </h2>
 
       <ul className="items">
         <li className="item-grid">
@@ -20,12 +24,6 @@ export default function Education() {
             <ul className="item-list">
               <li>Thesis: http://hdl.handle.net/10773/42176</li>
             </ul>
-          </div>
-        </li>
-        <li className="item-grid">
-          <div className="item-date">2024</div>
-          <div className="item-content">
-            <p>Certificate in Advanced English - C1</p>
           </div>
         </li>
       </ul>

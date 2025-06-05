@@ -1,10 +1,10 @@
-import { Mail, MapPinned, Puzzle } from "lucide-react";
+import { Puzzle } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 export default function AboutMe() {
   return (
     <section className="skills" id="skills">
       <h2 className="title-2">
-        <Puzzle color="#608abf" size={30} />
+        <Puzzle color="#608abf" size={34} />
         <span>Skills</span>
       </h2>
 

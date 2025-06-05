@@ -1,7 +1,11 @@
+import { BriefcaseBusiness } from "lucide-react";
 export default function Experience() {
   return (
     <section className="experience" id="experience">
-      <h2 className="title-2">Experience</h2>
+      <h2 className="title-2">
+        <BriefcaseBusiness color="#608abf" size={34} />
+        <span>Experience</span>
+      </h2>
 
       <ul className="items">
         <li className="item-grid">

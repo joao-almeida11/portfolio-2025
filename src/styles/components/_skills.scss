@@ -1,11 +1,11 @@
 .skills {
-  h2 {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    // font-size: 3.5rem;
-  }
+  // h2 {
+  //   display: flex;
+  //   flex-direction: row;
+  //   gap: 1rem;
+  //   align-items: center;
+  //   // font-size: 3.5rem;
+  // }
 
   .skills-content {
     min-width: 500px;
@@ -16,6 +16,7 @@
     li {
       text-indent: 3rem;
       line-height: 2.5rem;
+      list-style-type: circle;
     }
   }
 }
