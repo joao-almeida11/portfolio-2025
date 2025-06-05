@@ -1,5 +1,7 @@
 .items {
   position: relative;
+  max-width: 1000px;
+  padding: 0 2rem;
 
   // timeline guide
   &:after {
@@ -10,7 +12,7 @@
     background-color: $color-primary-light;
     top: 0.75rem;
     bottom: 0;
-    left: -25px;
+    left: -5px;
     z-index: 1;
   }
   .item-grid {
@@ -60,12 +62,13 @@
 
     .item-content--location {
       font-style: italic;
+      font-weight: 500;
       margin-bottom: 1rem;
     }
   }
   .item-list-label {
     margin-top: 2.25rem;
-    @extend %description-20;
+    @extend %description-18;
   }
   .item-list {
     margin-top: 1rem;

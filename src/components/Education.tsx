@@ -11,9 +11,9 @@ export default function Education() {
         <li className="item-grid">
           <div className="item-content">
             <div className="item-content--subtitle">
-              <span className="subtitle">
+              <h3 className="subtitle">
                 Master’s in Communication and Web Technologies
-              </span>
+              </h3>
               <div className="item-date">2021 - 2023</div>
             </div>
             <p className="item-content--location">University of Aveiro</p>
@@ -37,9 +37,9 @@ export default function Education() {
         <li className="item-grid">
           <div className="item-content">
             <div className="item-content--subtitle">
-              <span className="subtitle">
+              <h3 className="subtitle">
                 Bachelor’s in New Communication Technologies
-              </span>
+              </h3>
               <div className="item-date">2019 - 2021</div>
             </div>
             <p className="item-content--location">University of Aveiro</p>

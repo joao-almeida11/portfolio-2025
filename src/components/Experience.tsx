@@ -10,17 +10,23 @@ export default function Experience() {
       <ul className="items">
         <li className="item-grid">
           <div className="item-content">
-            <h3 className="title-3">
-              AlticeLabs@UA -{" "}
-              <span className="highlight-body-text">
-                Frontend Web Developer
-              </span>
-            </h3>
+            <div className="item-content--subtitle">
+              <h3 className="subtitle">
+                AlticeLabs@UA — Frontend Web Developer
+              </h3>
+              <div className="item-date">2021 - 2023</div>
+            </div>
             <p>
               Joint Development of academic and scientific projects between the
-              University of Aveiro and Altice Labs More info:
-              https://alticelabs.com/altice-labs-ua/
+              University of Aveiro and Altice Labs.
             </p>
+            <p>
+              More info:{" "}
+              <a href="https://alticelabs.com/altice-labs-ua" target="_blank">
+                https://alticelabs.com/altice-labs-ua
+              </a>
+            </p>
+
             <div className="item-list-label">Contributions:</div>
             <ul className="item-list">
               <li>
@@ -37,7 +43,6 @@ export default function Experience() {
               </li>
             </ul>
           </div>
-          <div className="item-date">2021 - 2023</div>
         </li>
       </ul>
     </section>
