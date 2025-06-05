@@ -19,11 +19,22 @@ export default function AboutMe() {
         </li>
         <li>
           <FaLinkedin size={24} color="#608abf" />
-          <span>www.linkedin.com/in/joao-almeida11</span>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/joao-almeida11"
+              target="_blank"
+            >
+              www.linkedin.com/in/joao-almeida11
+            </a>
+          </span>
         </li>
         <li>
           <FaGithub size={24} color="#608abf" />
-          <span>https://github.com/joao-almeida11</span>
+          <span>
+            <a href="https://github.com/joao-almeida11" target="_blank">
+              https://github.com/joao-almeida11
+            </a>
+          </span>
         </li>
       </ul>
     </section>
