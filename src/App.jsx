@@ -16,6 +16,7 @@ function App() {
           <div className="logo">Logo</div>
           <ul className="navbar-list">
             <li>About</li>
+            <li>Skills</li>
             <li>Experience</li>
             <li>Projects</li>
             <li>Contact</li>
