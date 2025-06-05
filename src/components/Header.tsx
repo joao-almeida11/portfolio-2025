@@ -1,7 +1,7 @@
 // import { SiGithub } from "@icons-pack/react-simple-icons";
 import { FileDown, Mail } from "lucide-react";
 
-import defaultTestImage from "../assets/default-image.jpg";
+import defaultTestImage from "../assets/default-image.webp";
 
 export default function Header() {
   return (

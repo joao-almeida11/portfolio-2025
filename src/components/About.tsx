@@ -1,28 +1,28 @@
 import { Mail, MapPinned } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-
-export default function Contact() {
+export default function AboutMe() {
   return (
-    <section className="contacts" id="contacts">
-      <h2 className="title-2">Contact</h2>
-
+    <section className="about" id="about">
+      <h1 className="title">João Almeida</h1>
+      <span>Frontend Developer</span>
+      <p>A frontend web developer with some knowledge of the backend.</p>
       <ul className="about-socials">
         <li>
           <a href="mailto:joao-almeida11@outlook.com">
-            <Mail />
+            <Mail color="#608abf" />
             <span>joao-almeida11@outlook.com</span>
           </a>
         </li>
         <li>
-          <MapPinned />
+          <MapPinned color="#608abf" />
           <span>Portugal</span>
         </li>
         <li>
-          <FaLinkedin size={24} />
+          <FaLinkedin size={24} color="#608abf" />
           <span>www.linkedin.com/in/joao-almeida11</span>
         </li>
         <li>
-          <FaGithub size={24} />
+          <FaGithub size={24} color="#608abf" />
           <span>https://github.com/joao-almeida11</span>
         </li>
       </ul>

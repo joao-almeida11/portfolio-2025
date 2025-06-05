@@ -1,7 +1,6 @@
-import { Mail, MapPinned } from "lucide-react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
+import About from "./components/About";
+import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
@@ -23,32 +22,12 @@ function App() {
         </div>
       </nav>
       <main className="homepage">
-        <section className="about" id="about">
-          <h1 className="title">João Almeida</h1>
-          <span>Frontend Developer</span>
-          <p>A frontend web developer with some knowledge of the backend.</p>
-          <ul className="about-socials">
-            <li>
-              <Mail />
-              <span>joao-almeida11@outlook.com</span>
-            </li>
-            <li>
-              <MapPinned />
-              <span>Portugal</span>
-            </li>
-            <li>
-              <FaLinkedin size={24} />
-              <span>www.linkedin.com/in/joao-almeida11</span>
-            </li>
-            <li>
-              <FaGithub size={24} />
-              <span>https://github.com/joao-almeida11</span>
-            </li>
-          </ul>
-        </section>
-        <section className="experience"></section>
-        <section className="projects"></section>
-        <section className="contact"></section>
+        <About />
+        <Skills />
+        <Education />
+        <Experience />
+        <Projects />
+        <Contacts />
       </main>
     </>
   );

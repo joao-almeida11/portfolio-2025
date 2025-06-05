@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   const sectionIds = [
-    "aboutme",
+    "about",
     "experience",
     "education",
     "projects",
