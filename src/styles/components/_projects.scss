@@ -1,0 +1,22 @@
+.projects .title-2 {
+  margin-bottom: 1.5rem;
+}
+.project-list {
+  padding-top: 1rem;
+}
+.project-item {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.project-item--name {
+  @extend %title-25;
+  margin-bottom: 1rem;
+}
+
+.project-item--image {
+  width: 100%;
+  border-radius: 1rem;
+}

@@ -1,0 +1,20 @@
+.dg.ac {
+  z-index: 99999 !important;
+}
+
+.__react_component_tooltip {
+  border-radius: 10px;
+  padding: 1.5rem !important;
+  max-width: 35rem;
+
+  @extend %description-14;
+  line-height: 1.8rem;
+}
+
+.tooltip__description {
+  margin-bottom: 1rem;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}

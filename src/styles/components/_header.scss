@@ -1,0 +1,31 @@
+header {
+  position: fixed;
+  top: 0;
+  padding: 2rem;
+  background-color: $color-primary;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .brand {
+  }
+  .socials {
+    svg + svg,
+    svg + a {
+      margin-left: 1.25rem;
+    }
+
+    .socials--github {
+      position: relative;
+      top: -1px;
+    }
+
+    .socials--email span {
+      position: relative;
+      margin-left: 0.75rem;
+      top: -0.75rem;
+    }
+  }
+}

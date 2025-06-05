@@ -1,0 +1,47 @@
+.items {
+  .item-grid {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .item-date {
+    font-style: italic;
+    margin-top: 4px;
+    @extend %description-17;
+  }
+  .item-content {
+    p {
+      @extend %description-16;
+    }
+  }
+  .item-list-label {
+    margin-top: 2.25rem;
+    @extend %description-20;
+  }
+  .item-list {
+    margin-top: 1rem;
+    li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 1.25rem;
+      line-height: 2.5rem;
+      @extend %description-16;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: $color-yellow;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 9px;
+      }
+    }
+  }
+}

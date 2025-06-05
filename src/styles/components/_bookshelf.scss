@@ -1,0 +1,69 @@
+.bookshelf-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bookshelf {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+
+  .book {
+    align-self: flex-end;
+    width: 30px;
+    height: 100px;
+    background: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    border-radius: 4px;
+    transform-origin: bottom center;
+    animation: sway 2s infinite ease-in-out alternate;
+    transition:
+      transform 0.6s ease,
+      width 0.3s ease,
+      height 0.3s ease;
+    cursor: pointer;
+
+    span {
+      transform: rotate(90deg); // counter-rotate to keep text upright
+      //   writing-mode: horizontal-tb;
+    }
+
+    &:nth-child(even) {
+      animation-delay: 0.2s;
+    }
+
+    &.rotated {
+      width: 100px;
+      height: 30px;
+      transform: rotate(180deg) translateY(30px); // Adjust Y to fit on the shelf
+      animation: none;
+
+      span {
+        transform: rotate(-180deg); // counter-rotate to keep text upright
+        writing-mode: horizontal-tb;
+      }
+    }
+  }
+}
+
+.bookshelf-wood {
+  background-color: #d78d4f;
+  border: 4px solid #f9d98a;
+  height: 30px;
+  width: 120%;
+  border-radius: 4px;
+}

@@ -1,0 +1,31 @@
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.homepage {
+  margin: 7rem 2rem 5rem 2rem;
+  overflow-y: auto;
+
+  section {
+    height: calc(100vh - 12rem);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    // leave space for the bookshelf (scroll assist) + margin
+    width: calc(100% - $bookshelf-width - 2rem);
+  }
+
+  .experience,
+  .education {
+    .title-2 {
+      margin-bottom: 3rem;
+    }
+
+    .title-3 {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$breakpoints: (
+  "smallPhone": 414px,
+  "phone": 768px,
+  "tablet": 1024px,
+  "large": 1280px,
+  "almostlarge": 1380px,
+  "xlarge": 1440px,
+  "xmlarge": 1580px,
+  "xllarge": 1700px,
+  "desktop": 1920px,
+  "xldesktop": 2050px,
+) !default;
+
+@import "include-media";

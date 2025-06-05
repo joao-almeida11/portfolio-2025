@@ -1,0 +1,28 @@
+@import "./base/_reset";
+
+@import "./utils/_variables";
+@import "./utils/_mixins";
+@import "./utils/_responsive";
+@import "./utils/_vendors";
+@import "./utils/_animations";
+
+@import "./typography/_descriptions";
+@import "./typography/_titles";
+@import "./typography/_highlighting";
+
+@import "./base/_fonts";
+@import "./base/_base";
+
+// global styles
+@import "./base/_global";
+
+// components
+@import "./components/_header";
+@import "./components/_items";
+@import "./components/_projects";
+@import "./components/_contacts";
+@import "./components/_navbar";
+@import "./components/_bookshelf";
+
+// pages
+@import "./pages/_homepage";
