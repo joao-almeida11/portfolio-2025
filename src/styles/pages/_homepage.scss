@@ -27,6 +27,8 @@ body {
 
     @include media("<=phone") {
       padding: 0 2.5rem;
+      height: auto;
+      margin: 3.5rem 0;
     }
 
     // leave space for the bookshelf (scroll assist) + margin
