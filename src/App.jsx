@@ -6,23 +6,12 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Others from "./components/Others";
 import Contacts from "./components/Contacts";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar-content">
-          <div className="logo">Logo</div>
-          <ul className="navbar-list">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
       <main className="homepage">
         <About />
         <Skills />
