@@ -34,6 +34,10 @@
       left: -30px;
       border-radius: 100%;
       z-index: 2;
+
+      @include media("<=phone") {
+        top: 0;
+      }
     }
   }
   .item-date {
@@ -42,6 +46,10 @@
     @extend %description-17;
     display: flex;
     align-self: flex-start;
+
+    @include media("<=phone") {
+      align-self: flex-end;
+    }
   }
   .item-content {
     p:not(.subtitle) {
@@ -52,8 +60,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 4rem;
+      column-gap: 4rem;
       width: 100%;
+
+      @include media("<=phone") {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+      }
 
       > .subtitle {
         margin-bottom: 1rem;

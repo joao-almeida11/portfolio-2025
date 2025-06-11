@@ -12,17 +12,25 @@
 
 %description-16 {
   font-size: 1.6rem;
+
+  @include media("<=phone") {
+    font-size: 1.3rem;
+  }
 }
 
 %description-17 {
   font-size: 1.7rem;
+
+  @include media("<=phone") {
+    font-size: 1.35rem;
+  }
 }
 
 %description-18 {
   font-size: 1.8rem;
   line-height: 2.5rem;
 
-  @include media("<=tablet") {
+  @include media("<=phone") {
     font-size: 1.6rem;
   }
 }
