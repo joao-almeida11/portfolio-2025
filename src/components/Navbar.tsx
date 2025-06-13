@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu } from "lucide-react";
 
 export default function Navbar() {
@@ -15,24 +15,110 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const dialogRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  const openDialog = () => {
+    dialogRef.current?.showModal();
+    const dialog = dialogRef.current;
+    const button = buttonRef.current;
+
+    console.log("dialog", dialog);
+    console.log("button", button);
+
+    if (dialog && button) {
+      const rect = button.getBoundingClientRect();
+      console.log("rect", rect);
+      console.log("window.scrollX ", window.scrollX);
+
+      // Position dialog relative to button
+      dialog.style.position = "absolute";
+      dialog.style.top = `${rect.bottom + window.scrollY + 5}px`;
+      dialog.style.right = `${rect.right - rect.left + window.scrollX}px`;
+
+      dialogRef.current?.showModal();
+      // dialog.show(); // not showModal to prevent centering
+    }
+  };
+
+  const closeDialog = () => {
+    dialogRef.current?.close();
+  };
+
+  const handleBackdropClick = (e) => {
+    const rect = dialogRef.current.getBoundingClientRect();
+    const isInDialog =
+      e.clientX >= rect.left &&
+      e.clientX <= rect.right &&
+      e.clientY >= rect.top &&
+      e.clientY <= rect.bottom;
+
+    if (!isInDialog) {
+      closeDialog();
+    }
+  };
+
   return (
     <nav className="navbar" role="navigation">
       <div className="navbar-content">
         <div className="logo">Logo</div>
         {isPhone ? (
-          <ul className="navbar-list">
-            <li>
-              <Menu />
-            </li>
-          </ul>
+          <div style={{ position: "relative" }}>
+            <ul className="navbar-list">
+              <li>
+                <Menu onClick={openDialog} ref={buttonRef} />
+              </li>
+            </ul>
+            <dialog
+              className="navbar-dialog"
+              ref={dialogRef}
+              onClick={handleBackdropClick}
+            >
+              {/* <button onClick={closeDialog}>✖</button> */}
+              <nav>
+                <ul className="navbar-list">
+                  <li>
+                    <a href="/#about">About</a>
+                  </li>
+                  <li>
+                    <a href="/#skills">Skills</a>
+                  </li>
+                  <li>
+                    <a href="/#education">Education</a>
+                  </li>
+                  <li>
+                    <a href="/#experience">Experience</a>
+                  </li>
+                  <li>
+                    <a href="/#projects">Projects</a>
+                  </li>
+                  <li>
+                    <a href="/#contacts">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </dialog>
+          </div>
         ) : (
           <ul className="navbar-list">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Education</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>
+              <a href="/#about">About</a>
+            </li>
+            <li>
+              <a href="/#skills">Skills</a>
+            </li>
+            <li>
+              <a href="/#education">Education</a>
+            </li>
+            <li>
+              <a href="/#experience">Experience</a>
+            </li>
+            <li>
+              <a href="/#projects">Projects</a>
+            </li>
+            <li>
+              <a href="/#contacts">Contacts</a>
+            </li>
           </ul>
         )}
       </div>
