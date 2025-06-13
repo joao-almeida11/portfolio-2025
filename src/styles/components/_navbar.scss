@@ -4,6 +4,7 @@
   top: 0;
   width: 100%;
   background-color: $color-white;
+  z-index: 3;
 }
 .navbar-content {
   display: flex;
@@ -32,6 +33,21 @@
     &:hover {
       border: 2px solid $color-primary;
     }
+  }
+}
+
+.navbar-dialog {
+  // position: relative;
+  width: auto;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background-color: $color-white;
+  margin-left: auto;
+  top: 6rem;
+
+  ul {
+    flex-direction: column;
   }
 }
 

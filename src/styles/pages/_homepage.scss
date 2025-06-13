@@ -14,7 +14,7 @@ body {
   max-width: 1280px;
 
   @include media("<=phone") {
-    margin: 0;
+    margin: 7rem 0 0 0;
   }
 
   section {
@@ -37,7 +37,7 @@ body {
 
   p {
     color: $color-secondary;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 
     @include media(">=tablet") {
       font-size: 2rem;
