@@ -1,6 +1,6 @@
 body {
-  min-height: 100vh;
-  min-width: 100vh;
+  min-height: 100dvh;
+  min-width: 100vw;
   padding: 0 2rem;
 
   @include media("<=phone") {
@@ -17,7 +17,6 @@ body {
   }
 
   section {
-    // min-height: calc(100dvh - 12rem);
     max-width: 100dvw;
     display: flex;
     justify-content: center;
