@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import FocusLock from "react-focus-lock";
 import Logo from "../assets/logo.webp";
 
@@ -70,7 +70,11 @@ export default function Navbar() {
           <div>
             <ul className="navbar-list">
               <li>
-                <button onClick={openDialog} ref={buttonRef}>
+                <button
+                  onClick={openDialog}
+                  ref={buttonRef}
+                  aria-label="open menu"
+                >
                   <Menu />
                 </button>
               </li>
@@ -79,9 +83,14 @@ export default function Navbar() {
             <dialog
               className={isDialogOpen ? "navbar-dialog" : ""}
               ref={dialogRef}
-              onClick={handleBackdropClick}
+              onClick={(e) => handleBackdropClick(e)}
             >
               <FocusLock disabled={!isDialogOpen}>
+                <div className="navbar-mobile-close-btn">
+                  <button onClick={() => closeDialog()} aria-label="close menu">
+                    <X />
+                  </button>
+                </div>
                 <nav>
                   <ul className="navbar-list">
                     <li>
