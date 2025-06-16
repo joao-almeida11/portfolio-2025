@@ -1,4 +1,4 @@
-# try 07
+# try 08
 name: Deploy
 
 on:
@@ -24,7 +24,7 @@ jobs:
           node-version: 24
 
       - name: Install dependencies
-        uses: npm ci
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
