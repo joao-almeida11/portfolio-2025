@@ -60,6 +60,16 @@
   margin-left: auto;
   border-radius: 1rem;
 
+  .navbar-list {
+    height: auto;
+    margin: 0;
+    gap: 0.5rem;
+
+    li {
+      margin: 0;
+    }
+  }
+
   ul {
     flex-direction: column;
   }
