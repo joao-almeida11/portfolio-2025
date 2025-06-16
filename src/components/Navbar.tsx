@@ -149,6 +149,14 @@ export default function Navbar() {
                         Projects
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href={`${import.meta.env.BASE_URL}#others`}
+                        onClick={() => closeDialog()}
+                      >
+                        Others
+                      </a>
+                    </li>
                     {/* <li>
                       <a href={`${import.meta.env.BASE_URL}#contacts`} onClick={() => closeDialog()}>
                         Contacts
@@ -175,6 +183,9 @@ export default function Navbar() {
             </li>
             <li>
               <a href={`${import.meta.env.BASE_URL}#projects`}>Projects</a>
+            </li>
+            <li>
+              <a href={`${import.meta.env.BASE_URL}#others`}>Others</a>
             </li>
             {/* <li>
               <a href={`${import.meta.env.BASE_URL}#contacts`}>Contacts</a>
