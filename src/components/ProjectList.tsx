@@ -17,7 +17,10 @@ export default function ProjectList() {
           </figure>
           <p className="project-item--description">
             A platform that provides opportunities for local artists to perform
-            at cultural events. Winner of Aveiro Tech City - ACADEMIA Challenges
+            at cultural events.
+          </p>
+          <p className="project-item--description">
+            Winner of Aveiro Tech City - ACADEMIA Challenges
           </p>
         </div>
       </article>

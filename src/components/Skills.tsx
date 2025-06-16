@@ -2,10 +2,10 @@ import { Puzzle } from "lucide-react";
 export default function AboutMe() {
   return (
     <section className="skills" id="skills">
-      <h2 className="title-2">
+      <div className="title-2--container">
         <Puzzle color="#608abf" size={34} />
-        <span>Skills</span>
-      </h2>
+        <h2 className="title-2">Skills</h2>
+      </div>
 
       <div className="skills-content">
         <div>

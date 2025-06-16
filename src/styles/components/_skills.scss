@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-top: 1rem;
 
     @include media("<=phone") {
       grid-template-columns: 1fr;
@@ -12,7 +11,7 @@
     li {
       position: relative;
       padding-left: 1.45rem;
-      line-height: 2.5rem;
+      line-height: 2rem;
 
       &::before {
         content: "";

@@ -4,10 +4,10 @@ import ProjectList from "./ProjectList";
 export default function Projects() {
   return (
     <section className="projects" id="projects">
-      <h2 className="title-2">
+      <div className="title-2--container">
         <NotebookPen color="#608abf" size={34} />
-        Projects
-      </h2>
+        <h2 className="title-2">Projects</h2>
+      </div>
       <ProjectList />
     </section>
   );

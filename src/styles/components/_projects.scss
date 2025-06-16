@@ -1,11 +1,17 @@
 .project-list {
-  padding-top: 0.25rem;
+  padding: 0.25rem 2rem 0 2rem;
 }
 .project-item {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 3rem;
   align-items: flex-end;
+
+  @include media("<=phone") {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
 }
 
 .project-item--name {

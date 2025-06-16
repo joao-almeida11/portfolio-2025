@@ -4,24 +4,27 @@
   color: $color-primary;
 }
 
-.title-2 {
-  font-size: var(--fs-600);
-
-  border-bottom: 2px solid $color-primary;
-  min-width: 500px;
+.title-2--container {
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  margin-bottom: 2.25rem;
-
   flex-direction: row;
-  gap: 1.25rem;
   align-items: center;
+  min-width: 500px;
+  border-bottom: 2px solid $color-primary;
+  gap: 1.25rem;
+  padding: 1rem;
+  margin-bottom: 1.85rem;
+}
+
+.title-2 {
+  font-size: var(--fs-600);
   color: $color-primary;
 }
 
 .subtitle {
   font-size: var(--fs-500);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   color: $color-black;
+  display: block;
+  line-height: 1.75rem;
 }

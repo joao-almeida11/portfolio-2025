@@ -4,10 +4,10 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 export default function Contact() {
   return (
     <section className="contacts" id="contacts">
-      <h2 className="title-2">
+      <div className="title-2--container">
         <ContactRound color="#608abf" size={34} />
-        <span>Contact</span>
-      </h2>
+        <h2 className="title-2">Contact</h2>
+      </div>
 
       <ul className="about-socials">
         <li>

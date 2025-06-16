@@ -4,7 +4,7 @@ $color-white: #ffffff;
 $color-primary: #608abf;
 $color-primary-light: #b6c9e2;
 
-$color-secondary: #636466;
+$color-secondary: #838586;
 
 $font-heading: "Montserrat", sans-serif;
 $font-body: "Montserrat", sans-serif;
@@ -27,13 +27,13 @@ $color-yellow: #ffd500;
 //   12rem
 // ); // the + 1rem is to allow zoom in and zoom out to function properly
 :root {
-  --fs-xl: 2.5rem;
-  --fs-600: 1.5rem;
+  --fs-xl: 2.35rem;
+  --fs-600: 1.75rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 768px) {
   :root {
     --fs-xl: 3rem;
     --fs-600: 2rem;
