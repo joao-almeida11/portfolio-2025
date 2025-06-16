@@ -23,23 +23,16 @@ export default function AboutMe() {
           <span>Portugal</span>
         </li>
         <li>
-          <FaLinkedin size={24} color="#608abf" />
-          <span>
-            <a
-              href="https://www.linkedin.com/in/joao-almeida11"
-              target="_blank"
-            >
-              www.linkedin.com/in/joao-almeida11
-            </a>
-          </span>
+          <a href="https://www.linkedin.com/in/joao-almeida11" target="_blank">
+            <FaLinkedin size={24} color="#608abf" />
+            <span>www.linkedin.com/in/joao-almeida11</span>
+          </a>
         </li>
         <li>
-          <FaGithub size={24} color="#608abf" />
-          <span>
-            <a href="https://github.com/joao-almeida11" target="_blank">
-              https://github.com/joao-almeida11
-            </a>
-          </span>
+          <a href="https://github.com/joao-almeida11" target="_blank">
+            <FaGithub size={24} color="#608abf" />
+            <span>https://github.com/joao-almeida11</span>
+          </a>
         </li>
       </ul>
     </section>
