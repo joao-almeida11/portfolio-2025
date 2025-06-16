@@ -1,13 +1,10 @@
-# try 09
+# try 10
 name: Deploy
 
 on:
   push:
     branches:
       - main
-
-permissions:
-  contents: write
 
 jobs:
   build:
@@ -20,8 +17,6 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        with:
-          node-version: 24
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
