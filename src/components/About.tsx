@@ -34,6 +34,11 @@ export default function AboutMe() {
             <span>https://github.com/joao-almeida11</span>
           </a>
         </li>
+        <li>
+          <a href="/JoaoAlmeida_CV.pdf" download className="download-cv">
+            Download CV
+          </a>
+        </li>
       </ul>
     </section>
   );
