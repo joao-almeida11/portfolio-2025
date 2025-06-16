@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu } from "lucide-react";
+import Logo from "../assets/logo.webp";
 
 export default function Navbar() {
   const [isPhone, setIsPhone] = useState(() => window.innerWidth <= 768);
@@ -61,7 +62,11 @@ export default function Navbar() {
   return (
     <nav className="navbar" role="navigation">
       <div className="navbar-content">
-        <div className="logo">Logo</div>
+        <div className="logo">
+          <a href="/#about">
+            <img src={Logo} alt="Logo" />
+          </a>
+        </div>
         {isPhone ? (
           <div style={{ position: "relative" }}>
             <ul className="navbar-list">
@@ -77,9 +82,6 @@ export default function Navbar() {
               {/* <button onClick={closeDialog}>✖</button> */}
               <nav>
                 <ul className="navbar-list">
-                  <li>
-                    <a href="/#about">About</a>
-                  </li>
                   <li>
                     <a href="/#skills">Skills</a>
                   </li>
@@ -101,9 +103,6 @@ export default function Navbar() {
           </div>
         ) : (
           <ul className="navbar-list">
-            <li>
-              <a href="/#about">About</a>
-            </li>
             <li>
               <a href="/#skills">Skills</a>
             </li>
