@@ -34,8 +34,8 @@ export default function Navbar() {
 
       // Position dialog relative to button
       dialog.style.position = "absolute";
-      dialog.style.top = `${rect.bottom + window.scrollY + 5}px`;
-      dialog.style.right = `${rect.right - rect.left + window.scrollX}px`;
+      dialog.style.top = `${rect.bottom + window.scrollY - 15}px`;
+      dialog.style.right = `${rect.right - rect.left + window.scrollX - 15}px`;
 
       dialogRef.current?.showModal();
       setIsDialogOpen(true);
@@ -84,8 +84,6 @@ export default function Navbar() {
               ref={dialogRef}
               onClick={handleBackdropClick}
             >
-              {/* <button onClick={closeDialog}>✖</button> */}
-
               <FocusLock disabled={!isDialogOpen}>
                 <nav>
                   <ul className="navbar-list">

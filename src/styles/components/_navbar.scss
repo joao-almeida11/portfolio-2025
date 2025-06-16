@@ -35,7 +35,8 @@
   height: 70px;
   gap: 0.75rem;
 
-  > li {
+  a,
+  button {
     padding: 0.75rem 1rem;
     margin: 0.75rem 0;
     border: 2px solid transparent;
@@ -65,7 +66,7 @@
     margin: 0;
     gap: 0.5rem;
 
-    li {
+    a {
       margin: 0;
     }
   }
