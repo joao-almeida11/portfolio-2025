@@ -1,8 +1,13 @@
 import { Mail, MapPinned } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import ProfilePicture from "../assets/profile-picture.webp";
+
 export default function AboutMe() {
   return (
     <section className="about" id="about">
+      <figure className="profile-picture">
+        <img src={ProfilePicture} alt="Profile picture of developer" />
+      </figure>
       <h1 className="title">João Almeida</h1>
       <span className="subtitle">Frontend Developer</span>
       <p>A frontend web developer with some knowledge of the backend.</p>

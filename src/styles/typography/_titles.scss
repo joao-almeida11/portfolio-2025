@@ -2,11 +2,6 @@
   font-size: var(--fs-xl);
   margin: 0.5rem 0;
   color: $color-primary;
-  margin-top: 5rem;
-
-  @include media("<=phone") {
-    margin-top: 2rem;
-  }
 }
 
 .title-2--container {
