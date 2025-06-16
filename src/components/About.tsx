@@ -35,7 +35,7 @@ export default function AboutMe() {
           </a>
         </li>
         <li>
-          <a href="/JoaoAlmeida_CV.pdf" download className="download-cv">
+          <a href="JoaoAlmeida_CV.pdf" download className="download-cv">
             Download CV
           </a>
         </li>
