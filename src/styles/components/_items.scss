@@ -37,7 +37,7 @@
       z-index: 2;
 
       @include media("<=phone") {
-        top: 0;
+        top: 7px;
       }
     }
   }
