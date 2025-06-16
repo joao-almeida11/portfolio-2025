@@ -7,7 +7,7 @@
   gap: 3rem;
   align-items: flex-end;
 
-  @include media("<=phone") {
+  @include media("<=tablet") {
     display: flex;
     flex-direction: column-reverse;
     gap: 1.5rem;
@@ -25,7 +25,24 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.project-item--content {
+  width: 100%;
+}
+
 .project-item--content--logo > img {
   height: 40px;
   margin-bottom: 1.25rem;
+}
+
+.project-item--technologies {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+
+  li {
+    border: 2px solid $color-primary;
+    border-radius: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
 }

@@ -22,6 +22,13 @@ export default function ProjectList() {
           <p className="project-item--description">
             Winner of Aveiro Tech City - ACADEMIA Challenges
           </p>
+          <ul className="project-item--technologies">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>SCSS</li>
+            <li>MySQL</li>
+            <li>Nodejs</li>
+          </ul>
         </div>
       </article>
     </div>
