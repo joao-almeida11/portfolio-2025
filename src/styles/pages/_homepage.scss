@@ -10,7 +10,6 @@ body {
 
 .homepage {
   margin: 7rem auto 5rem auto;
-  overflow-y: auto;
   max-width: 1280px;
 
   @include media("<=phone") {

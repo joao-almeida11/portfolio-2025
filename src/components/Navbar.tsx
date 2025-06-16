@@ -6,7 +6,6 @@ import Logo from "../assets/logo.webp";
 export default function Navbar() {
   const [isPhone, setIsPhone] = useState(() => window.innerWidth <= 768);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const firstLinkRef = useRef(null);
 
   useEffect(() => {
     function handleResize() {
@@ -52,13 +51,20 @@ export default function Navbar() {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav className="navbar" role="navigation">
       <div className="navbar-content">
         <div className="logo">
-          <a href="/#about">
+          <button onClick={() => scrollToTop()}>
             <img src={Logo} alt="Logo" />
-          </a>
+          </button>
         </div>
         {isPhone ? (
           <div>
@@ -80,30 +86,30 @@ export default function Navbar() {
                   <ul className="navbar-list">
                     <li>
                       <div className="logo">
-                        <a href="/#about" className="logo-a">
+                        <button
+                          onClick={() => scrollToTop()}
+                          className="logo-scroll-top"
+                        >
                           <img
                             src={Logo}
                             alt="Logo"
                             style={{ width: "50px" }}
                           />
-                        </a>
+                        </button>
                       </div>
                     </li>
                     <li>
-                      <a
-                        href="/#about"
-                        onClick={() => closeDialog()}
-                        ref={firstLinkRef}
+                      <button
+                        onClick={() => {
+                          closeDialog();
+                          scrollToTop();
+                        }}
                       >
                         About
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a
-                        href="/#skills"
-                        onClick={() => closeDialog()}
-                        ref={firstLinkRef}
-                      >
+                      <a href="/#skills" onClick={() => closeDialog()}>
                         Skills
                       </a>
                     </li>
@@ -122,11 +128,11 @@ export default function Navbar() {
                         Projects
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="/#contacts" onClick={() => closeDialog()}>
                         Contacts
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </nav>
               </FocusLock>
@@ -134,6 +140,9 @@ export default function Navbar() {
           </div>
         ) : (
           <ul className="navbar-list">
+            <li>
+              <button onClick={() => scrollToTop()}>About</button>
+            </li>
             <li>
               <a href="/#skills">Skills</a>
             </li>
@@ -146,9 +155,9 @@ export default function Navbar() {
             <li>
               <a href="/#projects">Projects</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/#contacts">Contacts</a>
-            </li>
+            </li> */}
           </ul>
         )}
       </div>

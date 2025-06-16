@@ -2,7 +2,7 @@ import { BookOpen } from "lucide-react";
 
 export default function Education() {
   return (
-    <section className="education" id="others">
+    <section className="education" id="others" style={{ marginTop: "0.25rem" }}>
       <div className="title-2--container">
         <BookOpen color="#608abf" size={34} />
         <h2 className="title-2">Others</h2>
