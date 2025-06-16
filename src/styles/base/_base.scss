@@ -42,11 +42,11 @@ html.has-scroll-dragging {
 }
 
 .has-scroll-smooth [data-scroll-container] {
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 [data-scroll-direction="horizontal"] [data-scroll-container] {
-  height: 100vh;
+  height: 100dvh;
   display: inline-block;
   white-space: nowrap;
 }

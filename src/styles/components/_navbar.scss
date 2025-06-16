@@ -52,13 +52,20 @@
   }
 }
 
-.navbar-dialog {
-  width: auto;
-  width: fit-content;
-  height: fit-content;
+.navbar-dialog nav {
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: $color-white;
-  margin-left: auto;
   border-radius: 1rem;
 
   .navbar-list {
@@ -68,6 +75,10 @@
 
     a {
       margin: 0;
+    }
+
+    .logo-a {
+      border: none;
     }
   }
 

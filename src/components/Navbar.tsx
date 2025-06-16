@@ -28,15 +28,6 @@ export default function Navbar() {
     const button = buttonRef.current;
 
     if (dialog && button) {
-      const rect = button.getBoundingClientRect();
-      console.log("rect", rect);
-      console.log("window.scrollX ", window.scrollX);
-
-      // Position dialog relative to button
-      dialog.style.position = "absolute";
-      dialog.style.top = `${rect.bottom + window.scrollY - 15}px`;
-      dialog.style.right = `${rect.right - rect.left + window.scrollX - 15}px`;
-
       dialogRef.current?.showModal();
       setIsDialogOpen(true);
       // dialog.show(); // not showModal to prevent centering
@@ -70,7 +61,7 @@ export default function Navbar() {
           </a>
         </div>
         {isPhone ? (
-          <div style={{ position: "relative" }}>
+          <div>
             <ul className="navbar-list">
               <li>
                 <button onClick={openDialog} ref={buttonRef}>
@@ -80,13 +71,33 @@ export default function Navbar() {
             </ul>
 
             <dialog
-              className="navbar-dialog"
+              className={isDialogOpen ? "navbar-dialog" : ""}
               ref={dialogRef}
               onClick={handleBackdropClick}
             >
               <FocusLock disabled={!isDialogOpen}>
                 <nav>
                   <ul className="navbar-list">
+                    <li>
+                      <div className="logo">
+                        <a href="/#about" className="logo-a">
+                          <img
+                            src={Logo}
+                            alt="Logo"
+                            style={{ width: "50px" }}
+                          />
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a
+                        href="/#about"
+                        onClick={() => closeDialog()}
+                        ref={firstLinkRef}
+                      >
+                        About
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="/#skills"
