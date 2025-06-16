@@ -1,8 +1,5 @@
-.projects .title-2 {
-  margin-bottom: 1.5rem;
-}
 .project-list {
-  padding-top: 2rem;
+  padding-top: 0.25rem;
 }
 .project-item {
   display: grid;
@@ -12,7 +9,7 @@
 }
 
 .project-item--name {
-  @extend %title-25;
+  font-size: var(--fs-500);
   margin-bottom: 1rem;
 }
 
@@ -24,5 +21,5 @@
 
 .project-item--content--logo > img {
   height: 40px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }

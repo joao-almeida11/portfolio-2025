@@ -12,11 +12,11 @@
     background-color: $color-primary-light;
     top: 0.75rem;
     bottom: 0;
-    left: 7px;
+    left: 19px;
     z-index: 1;
   }
   .item-grid {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
     margin-left: 12px;
 
@@ -44,7 +44,7 @@
   .item-date {
     font-style: italic;
     margin-top: 4px;
-    @extend %description-17;
+    font-size: var(--fs-400);
     display: flex;
     align-self: flex-start;
 
@@ -54,10 +54,6 @@
     }
   }
   .item-content {
-    p:not(.subtitle) {
-      @extend %description-16;
-    }
-
     .item-content--subtitle {
       display: flex;
       align-items: center;
@@ -73,23 +69,21 @@
 
     .item-content--location {
       font-style: italic;
-      font-weight: 500;
-      margin-bottom: 1rem;
+      margin-top: -5px;
+      margin-bottom: 1.15rem;
+      color: $color-secondary;
     }
   }
   .item-list-label {
-    margin-top: 2.25rem;
-    @extend %description-18;
+    margin-top: 1.5rem;
   }
   .item-list {
     margin-top: 1rem;
     color: $color-secondary;
     li {
       position: relative;
-      padding-left: 1.75rem;
-      margin-bottom: 1.25rem;
-      line-height: 2.5rem;
-      @extend %description-16;
+      padding-left: 1.45rem;
+      margin-bottom: 0.75rem;
 
       &::before {
         content: "";

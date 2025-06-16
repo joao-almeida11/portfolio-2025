@@ -17,3 +17,27 @@ $color-yellow: #ffd500;
 
 // title blue #608abf
 // half-page shade #b6c9e2
+
+// https://www.youtube.com/watch?v=wARbgs5Fmuw&t=16s
+
+// fluid title that adapts to windows with while still being accessible
+// --fs-xl: clamp(
+//   3.5rem,
+//   12vw + 1rem,
+//   12rem
+// ); // the + 1rem is to allow zoom in and zoom out to function properly
+:root {
+  --fs-xl: 2.5rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+}
+
+@media (min-width: 40em) {
+  :root {
+    --fs-xl: 3rem;
+    --fs-600: 2rem;
+    --fs-500: 1.4rem;
+    --fs-400: 1.05rem;
+  }
+}

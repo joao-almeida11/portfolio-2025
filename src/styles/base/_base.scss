@@ -5,13 +5,10 @@
 }
 
 html {
-  font-size: 62.5%;
   width: 100%;
 }
 
 body {
-  @extend %description-16;
-
   background-color: $color-white;
   color: $color-black;
   font-family: $font-body;

@@ -1,36 +1,18 @@
-%title-25 {
-  font-size: 2.5rem;
-
-  @include media("<phone") {
-    font-size: 2.8rem;
-  }
-}
-
-%title-40 {
-  font-size: 4rem;
-  font-family: $font-heading;
-  font-weight: 500;
-
-  @include media("<phone") {
-    font-size: 2.5rem;
-  }
-}
-
 .title {
-  @extend %title-40;
+  font-size: var(--fs-xl);
   margin: 0.5rem 0;
   color: $color-primary;
 }
 
 .title-2 {
-  @extend %title-40;
+  font-size: var(--fs-600);
 
   border-bottom: 2px solid $color-primary;
   min-width: 500px;
   display: flex;
   justify-content: center;
   padding: 1rem;
-  margin: 1.5rem 0;
+  margin-bottom: 2.25rem;
 
   flex-direction: row;
   gap: 1.25rem;
@@ -38,20 +20,8 @@
   color: $color-primary;
 }
 
-.title-3 {
-  @extend %title-25;
-}
-
 .subtitle {
-  font-size: 2rem;
+  font-size: var(--fs-500);
   margin-bottom: 1.5rem;
   color: $color-black;
-
-  @include media("<=phone") {
-    font-size: 1.5rem;
-  }
-
-  ~ ul {
-    margin-top: 1rem;
-  }
 }

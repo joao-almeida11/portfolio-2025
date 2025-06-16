@@ -9,3 +9,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+p,
+li {
+  line-height: 1.5rem;
+  font-size: var(--fs-400);
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
