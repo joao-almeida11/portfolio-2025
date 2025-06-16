@@ -31,16 +31,19 @@ export default function Experience() {
             <ul className="item-list">
               <li>
                 Developed and maintained frontend components of a multi-tenant
-                platform to improve their performance and accessibility, as well
-                as syncing tenants' frontend versions (Campus, GPS, miOne and
-                ColLab)
+                platform
               </li>
-              <li>Developed frontend components for a new tenant: ColLab</li>
-              <li>
-                Developed frontend components for a new major feature: Campus
-                Fora d'aulas - Updated frontend components for TeleAula by
-                Fundação Altice
-              </li>
+              <li>Developed frontend components for a new tenant</li>
+            </ul>
+            <ul
+              className="project-item--technologies"
+              style={{ marginTop: "1.1rem" }}
+            >
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>SCSS</li>
+              <li>neo4j</li>
+              <li>Linux</li>
             </ul>
           </div>
         </li>
