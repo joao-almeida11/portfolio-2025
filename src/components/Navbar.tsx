@@ -118,27 +118,39 @@ export default function Navbar() {
                       </button>
                     </li>
                     <li>
-                      <a href="/#skills" onClick={() => closeDialog()}>
+                      <a
+                        href={`${import.meta.env.BASE_URL}#skills`}
+                        onClick={() => closeDialog()}
+                      >
                         Skills
                       </a>
                     </li>
                     <li>
-                      <a href="/#education" onClick={() => closeDialog()}>
+                      <a
+                        href={`${import.meta.env.BASE_URL}#education`}
+                        onClick={() => closeDialog()}
+                      >
                         Education
                       </a>
                     </li>
                     <li>
-                      <a href="/#experience" onClick={() => closeDialog()}>
+                      <a
+                        href={`${import.meta.env.BASE_URL}#experience`}
+                        onClick={() => closeDialog()}
+                      >
                         Experience
                       </a>
                     </li>
                     <li>
-                      <a href="/#projects" onClick={() => closeDialog()}>
+                      <a
+                        href={`${import.meta.env.BASE_URL}#projects`}
+                        onClick={() => closeDialog()}
+                      >
                         Projects
                       </a>
                     </li>
                     {/* <li>
-                      <a href="/#contacts" onClick={() => closeDialog()}>
+                      <a href={`${import.meta.env.BASE_URL}#contacts`} onClick={() => closeDialog()}>
                         Contacts
                       </a>
                     </li> */}
@@ -153,19 +165,19 @@ export default function Navbar() {
               <button onClick={() => scrollToTop()}>About</button>
             </li>
             <li>
-              <a href="/#skills">Skills</a>
+              <a href={`${import.meta.env.BASE_URL}#skills`}>Skills</a>
             </li>
             <li>
-              <a href="/#education">Education</a>
+              <a href={`${import.meta.env.BASE_URL}#education`}>Education</a>
             </li>
             <li>
-              <a href="/#experience">Experience</a>
+              <a href={`${import.meta.env.BASE_URL}#experience`}>Experience</a>
             </li>
             <li>
-              <a href="/#projects">Projects</a>
+              <a href={`${import.meta.env.BASE_URL}#projects`}>Projects</a>
             </li>
             {/* <li>
-              <a href="/#contacts">Contacts</a>
+              <a href={`${import.meta.env.BASE_URL}#contacts`}>Contacts</a>
             </li> */}
           </ul>
         )}
