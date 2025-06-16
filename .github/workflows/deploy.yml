@@ -1,4 +1,4 @@
-# try 04
+# try 05
 name: Deploy
 
 on:
@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install dependencies
-        uses: npm ci
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
@@ -46,4 +46,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./dist
+          folder: dist
+          clean: true
+          ssh-key: true
