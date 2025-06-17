@@ -20,7 +20,7 @@ export default function Education() {
               University of Aveiro
             </p>
             <div className="item-description">
-              <p>Web development & Devops & Design</p>
+              <p>Focus: Web Development, DevOps & UX/UI Design</p>
               <ul className="item-list">
                 <li>
                   <a href="https://www.ua.pt/en/course/508" target="_blank">
@@ -48,7 +48,7 @@ export default function Education() {
               University of Aveiro
             </p>
             <div className="item-description">
-              <p>Web development & Design</p>
+              <p>Focus: Web Development & UX/UI Design</p>
               <ul className="item-list">
                 <li>
                   <a href="https://www.ua.pt/en/c/1531/p" target="_blank">
