@@ -17,7 +17,7 @@ export default function Education() {
             </div>
           </div>
           <div className="item-description">
-            <p>To update knowledge and learn new things.</p>
+            <p>To review and learn new things.</p>
           </div>
         </li>
         <li className="item-grid">
