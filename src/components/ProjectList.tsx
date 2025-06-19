@@ -9,8 +9,8 @@ export default function ProjectList() {
           className="project-item--image"
           src={NossaHomePageImage}
           alt="NOSSA! Homepage"
-          width={592}
-          height={337}
+          width={750}
+          height={427}
         />
 
         <div className="project-item--content">
