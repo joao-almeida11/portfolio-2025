@@ -62,8 +62,8 @@ export default function Navbar() {
     <nav className="navbar" role="navigation">
       <div className="navbar-content">
         <div className="logo">
-          <button onClick={() => scrollToTop()}>
-            <img src={Logo} alt="Logo" />
+          <button onClick={() => scrollToTop()} type="button">
+            <img src={Logo} alt="Logo" width={25} height={24} />
           </button>
         </div>
         {isPhone ? (
@@ -74,6 +74,7 @@ export default function Navbar() {
                   onClick={openDialog}
                   ref={buttonRef}
                   aria-label="open menu"
+                  type="button"
                 >
                   <Menu />
                 </button>
@@ -87,7 +88,11 @@ export default function Navbar() {
             >
               <FocusLock disabled={!isDialogOpen}>
                 <div className="navbar-mobile-close-btn">
-                  <button onClick={() => closeDialog()} aria-label="close menu">
+                  <button
+                    onClick={() => closeDialog()}
+                    aria-label="close menu"
+                    type="button"
+                  >
                     <X />
                   </button>
                 </div>
@@ -98,10 +103,13 @@ export default function Navbar() {
                         <button
                           onClick={() => scrollToTop()}
                           className="logo-scroll-top"
+                          type="button"
                         >
                           <img
                             src={Logo}
                             alt="Logo"
+                            width={50}
+                            height={48}
                             style={{ width: "50px" }}
                           />
                         </button>
@@ -113,6 +121,7 @@ export default function Navbar() {
                           closeDialog();
                           scrollToTop();
                         }}
+                        type="button"
                       >
                         About
                       </button>
@@ -170,7 +179,9 @@ export default function Navbar() {
         ) : (
           <ul className="navbar-list">
             <li>
-              <button onClick={() => scrollToTop()}>About</button>
+              <button onClick={() => scrollToTop()} type="button">
+                About
+              </button>
             </li>
             <li>
               <a href={`${import.meta.env.BASE_URL}#skills`}>Skills</a>

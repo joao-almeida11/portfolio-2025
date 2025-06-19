@@ -6,7 +6,12 @@ export default function AboutMe() {
   return (
     <section className="about" id="about">
       <figure className="profile-picture">
-        <img src={ProfilePicture} alt="Profile picture of developer" />
+        <img
+          src={ProfilePicture}
+          alt="Profile of developer"
+          height={300}
+          width={300}
+        />
       </figure>
       <h1 className="title">João Almeida</h1>
       <span className="subtitle">Frontend Developer</span>

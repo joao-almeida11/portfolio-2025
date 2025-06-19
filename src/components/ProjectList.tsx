@@ -9,11 +9,13 @@ export default function ProjectList() {
           className="project-item--image"
           src={NossaHomePageImage}
           alt="NOSSA! Homepage"
+          width={592}
+          height={337}
         />
 
         <div className="project-item--content">
           <figure className="project-item--content--logo">
-            <img src={NossaProjectLogo} alt="NOSSA!" />
+            <img src={NossaProjectLogo} alt="NOSSA!" width={75} height={21} />
           </figure>
           <p className="project-item--description">
             A platform that provides opportunities for local artists to perform
