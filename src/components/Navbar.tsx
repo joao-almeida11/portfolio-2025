@@ -1,35 +1,25 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import FocusLock from "react-focus-lock";
 import Logo from "../assets/logo.webp";
+import useIsPhone from "../hooks/useIsPhone";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 export default function Navbar() {
-  const [isPhone, setIsPhone] = useState(() => window.innerWidth <= 768);
+  const isPhone = useIsPhone();
+  const scrollToTop = useScrollToTop;
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  useEffect(() => {
-    function handleResize() {
-      setIsPhone(window.innerWidth <= 768);
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const dialogRef = useRef(null);
-  const buttonRef = useRef(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const openDialog = () => {
-    // dialogRef.current?.showModal();
     const dialog = dialogRef.current;
     const button = buttonRef.current;
 
     if (dialog && button) {
       dialogRef.current?.showModal();
       setIsDialogOpen(true);
-      // dialog.show(); // not showModal to prevent centering
     }
   };
 
@@ -38,31 +28,11 @@ export default function Navbar() {
     setIsDialogOpen(false);
   };
 
-  const handleBackdropClick = (e) => {
-    const rect = dialogRef.current.getBoundingClientRect();
-    const isInDialog =
-      e.clientX >= rect.left &&
-      e.clientX <= rect.right &&
-      e.clientY >= rect.top &&
-      e.clientY <= rect.bottom;
-
-    if (!isInDialog) {
-      closeDialog();
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <nav className="navbar" role="navigation">
       <div className="navbar-content">
         <div className="logo">
-          <button onClick={() => scrollToTop()} type="button">
+          <button onClick={scrollToTop} type="button">
             <img src={Logo} alt="Logo" width={25} height={24} />
           </button>
         </div>
@@ -84,12 +54,12 @@ export default function Navbar() {
             <dialog
               className={isDialogOpen ? "navbar-dialog" : ""}
               ref={dialogRef}
-              onClick={(e) => handleBackdropClick(e)}
+              aria-modal="true"
             >
               <FocusLock disabled={!isDialogOpen}>
                 <div className="navbar-mobile-close-btn">
                   <button
-                    onClick={() => closeDialog()}
+                    onClick={closeDialog}
                     aria-label="close menu"
                     type="button"
                   >
@@ -101,17 +71,11 @@ export default function Navbar() {
                     <li>
                       <div className="logo">
                         <button
-                          onClick={() => scrollToTop()}
+                          onClick={scrollToTop}
                           className="logo-scroll-top"
                           type="button"
                         >
-                          <img
-                            src={Logo}
-                            alt="Logo"
-                            width={50}
-                            height={48}
-                            style={{ width: "50px" }}
-                          />
+                          <img src={Logo} alt="Logo" width={50} height={48} />
                         </button>
                       </div>
                     </li>
@@ -129,7 +93,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href={`${import.meta.env.BASE_URL}#skills`}
-                        onClick={() => closeDialog()}
+                        onClick={closeDialog}
                       >
                         Skills
                       </a>
@@ -137,7 +101,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href={`${import.meta.env.BASE_URL}#education`}
-                        onClick={() => closeDialog()}
+                        onClick={closeDialog}
                       >
                         Education
                       </a>
@@ -145,7 +109,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href={`${import.meta.env.BASE_URL}#experience`}
-                        onClick={() => closeDialog()}
+                        onClick={closeDialog}
                       >
                         Experience
                       </a>
@@ -153,7 +117,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href={`${import.meta.env.BASE_URL}#projects`}
-                        onClick={() => closeDialog()}
+                        onClick={closeDialog}
                       >
                         Projects
                       </a>
@@ -161,13 +125,13 @@ export default function Navbar() {
                     <li>
                       <a
                         href={`${import.meta.env.BASE_URL}#others`}
-                        onClick={() => closeDialog()}
+                        onClick={closeDialog}
                       >
                         Others
                       </a>
                     </li>
                     {/* <li>
-                      <a href={`${import.meta.env.BASE_URL}#contacts`} onClick={() => closeDialog()}>
+                      <a href={`${import.meta.env.BASE_URL}#contacts`} onClick={closeDialog}>
                         Contacts
                       </a>
                     </li> */}
@@ -179,7 +143,7 @@ export default function Navbar() {
         ) : (
           <ul className="navbar-list">
             <li>
-              <button onClick={() => scrollToTop()} type="button">
+              <button onClick={scrollToTop} type="button">
                 About
               </button>
             </li>
