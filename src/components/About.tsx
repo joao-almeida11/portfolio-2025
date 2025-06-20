@@ -16,10 +16,9 @@ export default function AboutMe() {
       <h1 className="title">João Almeida</h1>
       <span className="subtitle">Frontend Developer</span>
       <p className="about-description">
-        As a frontend developer, I am passionate about building user-friendly
-        web applications using React and modern web technologies. My background
-        includes building and maintaining frontend features with React and
-        related technologies in real-world, team-based environments.
+        Frontend developer passionate about building user-friendly web apps with
+        React and modern technologies, with hands-on experience in real-world,
+        team-based environments.
       </p>
       <ul className="about-socials">
         <li>
