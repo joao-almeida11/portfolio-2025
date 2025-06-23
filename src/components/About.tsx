@@ -16,9 +16,7 @@ export default function AboutMe() {
       <h1 className="title">João Almeida</h1>
       <span className="subtitle">Frontend Developer</span>
       <p className="about-description">
-        Frontend developer passionate about building user-friendly web apps with
-        React and modern technologies, with hands-on experience in real-world,
-        team-based environments.
+        I'm a frontend developer who loves crafting intuitive, scalable web applications with React and other modern tools.
       </p>
       <ul className="about-socials">
         <li>
@@ -32,13 +30,13 @@ export default function AboutMe() {
           <span>Portugal</span>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/joao-almeida11" target="_blank">
+          <a href="https://www.linkedin.com/in/joao-almeida11" target="_blank" rel="noopener">
             <FaLinkedin size={24} color="#608abf" />
             <span>www.linkedin.com/in/joao-almeida11</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/joao-almeida11" target="_blank">
+          <a href="https://github.com/joao-almeida11" target="_blank" rel="noopener">
             <FaGithub size={24} color="#608abf" />
             <span>https://github.com/joao-almeida11</span>
           </a>

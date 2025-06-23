@@ -18,18 +18,19 @@ export default function AboutMe() {
         <div>
           <span className="subtitle">Programming</span>
           <ul>
-            <li>JavaScript, React, Nodejs</li>
-            <li>HTML, CSS, SASS</li>
-            <li>PHP, Linux, Git</li>
-            <li>MySQL, neo4j</li>
+            <li>React, JavaScript, Typescript (learning)</li>
+            <li>HTML, CSS, SCSS</li>
+            <li>PHP, Nodejs, MySQL, Neo4j</li>
+            <li>Git, Linux, Agile workflows</li>
           </ul>
         </div>
         <div>
           <span className="subtitle">Soft skills</span>
           <ul>
-            <li>Teamwork</li>
-            <li>Communication</li>
-            <li>Problem-solving</li>
+            <li>Ownership & accountability</li>
+            <li>Communication & collaboration</li>
+            <li>Curiosity & lifelong learning</li>
+            <li>Analytical thinking & problem-solving</li>
           </ul>
         </div>
       </div>

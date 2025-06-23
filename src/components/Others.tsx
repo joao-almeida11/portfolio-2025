@@ -12,14 +12,14 @@ export default function Education() {
         <li className="item-grid">
           <div className="item-content">
             <div className="item-content--subtitle">
-              <h3 className="subtitle">Courses on Frontend Masters</h3>
+              <h3 className="subtitle">Frontend Masters (Ongoing)</h3>
               <div className="item-date">2025</div>
             </div>
           </div>
           <div className="item-description">
             <p>
-              Completed several React and JavaScript-focused courses to stay
-              updated and expand skills.
+              Self-paced study to strengthen frontend and fullstack knowledge
+              (React, TypeScript, testing, performance, etc).
             </p>
           </div>
         </li>
@@ -29,6 +29,9 @@ export default function Education() {
               <h3 className="subtitle">Certificate in Advanced English - C1</h3>
               <div className="item-date">2024</div>
             </div>
+            <p className="item-content--location color-secondary">
+              Cambridge University Press & Assessment
+            </p>
           </div>
         </li>
         <li className="item-grid">
@@ -42,10 +45,13 @@ export default function Education() {
             </p>
             <div className="item-description">
               <p>
-                Mentoring movement at the University of Aveiro designed to help
-                2nd year bachelor students with PHP, MySQL databases and Git in
-                their Database and Server-Side Technologies curricular unit.{" "}
-                <a href="https://www.ua.pt/en/uc/15719" target="_blank">
+                Mentored 2nd-year students in PHP, MySQL, and Git within the
+                Database and Server-Side Technologies curricular unit.{" "}
+                <a
+                  href="https://www.ua.pt/en/uc/15719"
+                  target="_blank"
+                  rel="noopener"
+                >
                   https://www.ua.pt/en/uc/15719
                 </a>
               </p>

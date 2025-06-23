@@ -23,12 +23,20 @@ export default function Education() {
               <p>Focus: Web Development, DevOps & UX/UI Design</p>
               <ul className="item-list">
                 <li>
-                  <a href="https://www.ua.pt/en/course/508" target="_blank">
+                  <a
+                    href="https://www.ua.pt/en/course/508"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     Curricular Plan: https://www.ua.pt/en/course/508
                   </a>
                 </li>
                 <li>
-                  <a href="https://hdl.handle.net/10773/42176" target="_blank">
+                  <a
+                    href="https://hdl.handle.net/10773/42176"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     Thesis: https://hdl.handle.net/10773/42176
                   </a>
                 </li>
@@ -51,7 +59,11 @@ export default function Education() {
               <p>Focus: Web Development & UX/UI Design</p>
               <ul className="item-list">
                 <li>
-                  <a href="https://www.ua.pt/en/c/1531/p" target="_blank">
+                  <a
+                    href="https://www.ua.pt/en/c/1531/p"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     Curricular Plan: https://www.ua.pt/en/c/1531/p
                   </a>
                 </li>

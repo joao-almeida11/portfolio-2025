@@ -17,12 +17,16 @@ export default function Experience() {
               <div className="item-date">2021 - 2023</div>
             </div>
             <p>
-              Joint Development of academic and scientific projects between the
-              University of Aveiro and Altice Labs.
+              Worked on academic–industry collaborative project focused on
+              developing a multi-tenant web platform.
             </p>
             <p>
               More info:{" "}
-              <a href="https://alticelabs.com/altice-labs-ua" target="_blank">
+              <a
+                href="https://alticelabs.com/altice-labs-ua"
+                target="_blank"
+                rel="noopener"
+              >
                 https://alticelabs.com/altice-labs-ua
               </a>
             </p>
@@ -30,20 +34,36 @@ export default function Experience() {
             <div className="item-list-label">Contributions:</div>
             <ul className="item-list">
               <li>
-                Developed and maintained frontend components of a multi-tenant
-                platform
+                Developed and maintained frontend components using React,
+                JavaScript, and SCSS
               </li>
-              <li>Developed frontend components for a new tenant</li>
+              <li>
+                Built and styled tenant-specific interfaces with attention to UX
+                and scalability
+              </li>
+              <li>
+                Collaborated cross-functionally with designers and backend
+                developers
+              </li>
+              <li>
+                Worked in Linux-based development and staging environments
+              </li>
+              <li>
+                Wrote and executed Neo4j queries for data verification and
+                troubleshooting
+              </li>
+              <li>Used Git for team collaboration</li>
             </ul>
             <ul
               className="project-item--technologies"
               style={{ marginTop: "1.1rem" }}
             >
-              <li>JavaScript</li>
               <li>React</li>
+              <li>JavaScript</li>
               <li>SCSS</li>
-              <li>neo4j</li>
+              <li>Neo4j</li>
               <li>Linux</li>
+              <li>Git</li>
             </ul>
           </div>
         </li>
