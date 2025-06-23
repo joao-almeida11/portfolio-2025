@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "check-format": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,json,md,css,sass,scss}\"",
@@ -37,6 +37,7 @@
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@types/sass": "^1.43.1",
     "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
@@ -47,7 +48,10 @@
     "include-media": "^2.0.0",
     "lint-staged": "^16.1.0",
     "prettier": "^3.5.3",
+    "rollup-plugin-visualizer": "^6.0.3",
     "sass": "^1.89.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.1",
     "vite": "^6.3.5"
   }
 }
