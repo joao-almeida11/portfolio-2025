@@ -12,7 +12,7 @@ export default function Education() {
           <div className="item-content">
             <div className="item-content--subtitle">
               <h3 className="subtitle">
-                Master’s in Communication and Web Technologies
+                Master's in Communication and Web Technologies
               </h3>
               <div className="item-date">2021 - 2023</div>
             </div>
@@ -48,7 +48,7 @@ export default function Education() {
           <div className="item-content">
             <div className="item-content--subtitle">
               <h3 className="subtitle">
-                Bachelor’s in New Communication Technologies
+                Bachelor's in New Communication Technologies
               </h3>
               <div className="item-date">2019 - 2021</div>
             </div>

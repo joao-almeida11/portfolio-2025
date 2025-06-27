@@ -17,8 +17,8 @@ export default function Experience() {
               <div className="item-date">2021 - 2023</div>
             </div>
             <p>
-              Worked on academic–industry collaborative project focused on
-              developing a multi-tenant web platform.
+              Worked on a multi-tenant web platform as part of a cross-
+              functional team.
             </p>
             <p>
               More info:{" "}
@@ -34,25 +34,21 @@ export default function Experience() {
             <div className="item-list-label">Contributions:</div>
             <ul className="item-list">
               <li>
-                Developed and maintained frontend components using React,
-                JavaScript, and SCSS
+                Developed and maintained frontend components for a multi-tenant
+                web platform (4 tenants) using React, JavaScript, SASS and HTML.
               </li>
               <li>
-                Built and styled tenant-specific interfaces with attention to UX
-                and scalability
+                Worked with cross-functional team members to launch a new
+                tenant.
               </li>
               <li>
-                Collaborated cross-functionally with designers and backend
-                developers
+                Collaborated with developers and designers in a cross-
+                functional Agile team.
               </li>
               <li>
-                Worked in Linux-based development and staging environments
+                Used Linux-based development and staging environments for
+                testing and deployment.
               </li>
-              <li>
-                Wrote and executed Neo4j queries for data verification and
-                troubleshooting
-              </li>
-              <li>Used Git for team collaboration</li>
             </ul>
             <ul
               className="project-item--technologies"

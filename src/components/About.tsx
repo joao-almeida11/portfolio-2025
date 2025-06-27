@@ -16,7 +16,7 @@ export default function AboutMe() {
       <h1 className="title">João Almeida</h1>
       <span className="subtitle">Frontend Developer</span>
       <p className="about-description">
-        I'm a frontend developer who loves crafting intuitive, scalable web applications with React and other modern tools.
+        I'm a frontend developer who loves crafting intuitive web applications with React.
       </p>
       <ul className="about-socials">
         <li>

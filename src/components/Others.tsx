@@ -12,20 +12,6 @@ export default function Education() {
         <li className="item-grid">
           <div className="item-content">
             <div className="item-content--subtitle">
-              <h3 className="subtitle">Frontend Masters (Ongoing)</h3>
-              <div className="item-date">2025</div>
-            </div>
-          </div>
-          <div className="item-description">
-            <p>
-              Self-paced study to strengthen frontend and fullstack knowledge
-              (React, TypeScript, testing, performance, etc).
-            </p>
-          </div>
-        </li>
-        <li className="item-grid">
-          <div className="item-content">
-            <div className="item-content--subtitle">
               <h3 className="subtitle">Certificate in Advanced English - C1</h3>
               <div className="item-date">2024</div>
             </div>

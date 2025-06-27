@@ -16,21 +16,29 @@ export default function AboutMe() {
           </ul>
         </div>
         <div>
-          <span className="subtitle">Programming</span>
+          <span className="subtitle">Core Frontend</span>
           <ul>
-            <li>React, JavaScript, Typescript (learning)</li>
-            <li>HTML, CSS, SCSS</li>
-            <li>PHP, Nodejs, MySQL, Neo4j</li>
-            <li>Git, Linux, Agile workflows</li>
+            <li>JavaScript, React, SASS, CSS and HTML</li>
+          </ul>
+        </div>
+        <div>
+          <span className="subtitle">Additional Technologies</span>
+          <ul>
+            <li>Linux, Git, Agile workflows</li>
+          </ul>
+        </div>
+        <div>
+          <span className="subtitle">Previous Experience</span>
+          <ul>
+            <li>PHP, MySQL, Neo4j (basic query usage)</li>
           </ul>
         </div>
         <div>
           <span className="subtitle">Soft skills</span>
           <ul>
-            <li>Ownership & accountability</li>
-            <li>Communication & collaboration</li>
-            <li>Curiosity & lifelong learning</li>
-            <li>Analytical thinking & problem-solving</li>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Continuous learning mindset</li>
           </ul>
         </div>
       </div>
