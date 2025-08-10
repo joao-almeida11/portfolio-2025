@@ -9,7 +9,7 @@ export default function Certifications() {
     >
       <div className="title-2--container">
         <BookOpen color="#608abf" size={34} />
-        <h2 className="title-2">Certifications</h2>
+        <h2 className="title-2">Certifications & Activities</h2>
       </div>
 
       <ul className="items">
