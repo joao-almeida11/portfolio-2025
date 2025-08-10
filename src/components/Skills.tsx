@@ -38,7 +38,6 @@ export default function AboutMe() {
           <ul>
             <li>Teamwork</li>
             <li>Communication</li>
-            <li>Continuous learning mindset</li>
           </ul>
         </div>
       </div>

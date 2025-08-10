@@ -124,10 +124,10 @@ export default function Navbar() {
                     </li>
                     <li>
                       <a
-                        href={`${import.meta.env.BASE_URL}#others`}
+                        href={`${import.meta.env.BASE_URL}#certifications`}
                         onClick={closeDialog}
                       >
-                        Others
+                        Certifications
                       </a>
                     </li>
                     {/* <li>
@@ -160,7 +160,9 @@ export default function Navbar() {
               <a href={`${import.meta.env.BASE_URL}#projects`}>Projects</a>
             </li>
             <li>
-              <a href={`${import.meta.env.BASE_URL}#others`}>Others</a>
+              <a href={`${import.meta.env.BASE_URL}#certifications`}>
+                Certifications
+              </a>
             </li>
             {/* <li>
               <a href={`${import.meta.env.BASE_URL}#contacts`}>Contacts</a>

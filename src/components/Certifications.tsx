@@ -1,14 +1,51 @@
 import { BookOpen } from "lucide-react";
 
-export default function Education() {
+export default function Certifications() {
   return (
-    <section className="education" id="others" style={{ marginTop: "0.25rem" }}>
+    <section
+      className="certifications"
+      id="certifications"
+      style={{ marginTop: "0.25rem" }}
+    >
       <div className="title-2--container">
         <BookOpen color="#608abf" size={34} />
-        <h2 className="title-2">Certifications & Activities</h2>
+        <h2 className="title-2">Certifications</h2>
       </div>
 
       <ul className="items">
+        <li className="item-grid">
+          <div className="item-content">
+            <div className="item-content--subtitle">
+              <h3 className="subtitle">Intermediate React, v6</h3>
+              <div className="item-date">2025</div>
+            </div>
+            <p className="item-content--location color-secondary">
+              Frontend Masters
+            </p>
+          </div>
+        </li>
+        <li className="item-grid">
+          <div className="item-content">
+            <div className="item-content--subtitle">
+              <h3 className="subtitle">Figma for Developers, v2</h3>
+              <div className="item-date">2025</div>
+            </div>
+            <p className="item-content--location color-secondary">
+              Frontend Masters
+            </p>
+          </div>
+        </li>
+        <li className="item-grid">
+          <div className="item-content">
+            <div className="item-content--subtitle">
+              <h3 className="subtitle">Complete Intro to Containers, v2</h3>
+              <div className="item-date">2025</div>
+            </div>
+            <p className="item-content--location color-secondary">
+              Frontend Masters
+            </p>
+          </div>
+        </li>
         <li className="item-grid">
           <div className="item-content">
             <div className="item-content--subtitle">
