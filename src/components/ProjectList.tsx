@@ -22,7 +22,7 @@ export default function ProjectList() {
             at cultural events.
           </p>
           <p className="project-item--description">
-            Winner of Aveiro Tech City - ACADEMIA Challenges
+            Winner of Aveiro Tech City - ACADEMIA Challenges.
           </p>
           <ul className="project-item--technologies">
             <li>JavaScript</li>
