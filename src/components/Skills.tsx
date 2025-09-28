@@ -18,7 +18,7 @@ export default function AboutMe() {
         <div>
           <span className="subtitle">Core Frontend</span>
           <ul>
-            <li>JavaScript, React, SASS, CSS and HTML</li>
+            <li>React.js, JavaScript, TypeScript, SASS, CSS and HTML</li>
           </ul>
         </div>
         <div>
